@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        height: 645px;
+        background-image: linear-gradient(to bottom left, #2fb5a2, #95daab);
+      }
+      #center {
+        margin-top: 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      #login {
+        height: 600px;
+        width: 600px;
+        background-color: #fff;
+        border-radius: 5px;
+        border: 1px solid rgba(0, 0, 0, 0.4);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      #p_login {
+        color: #2797a1;
+        font-size: xx-large;
+      }
+      #input_email {
+        margin: 0px 10px 10px 10px;
+        padding: 10px;
+        width: 350px;
+        height: 40px;
+        border: 1px solid #ccc;
+      }
+      #input_password {
+        margin: 10px;
+        width: 350px;
+        padding: 10px;
+        width: 350px;
+        height: 40px;
+        border: 1px solid #ccc;
+      }
+      #show {
+        width: 370px;
+      }
+      #in_login {
+        margin-top: 40px;
+        margin-bottom: 20px;
+        background-color: #0b847a;
+        color: #fff;
+        padding: 10px 20px 10px 20px;
+        font-size: medium;
+        border-radius: 5px;
+        border: 0px;
+      }
+      a {
+        text-decoration: none;
+        color: #0b847a;
+      }
+      .p_m {
+        margin: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="center">
+      <div id="login">
+        <p id="p_login">Login</p>
+        <form action="">
+          <input
+            id="input_email"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="email"
+          />
+          <input
+            id="input_password"
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Password"
+          />
+          <div id="show">
+            <input type="checkbox" name="Show_pass" id="Show_pass" />
+            <label for="Show_pass">Show password</label><br />
+          </div>
+          <input id="in_login" type="submit" value="Log in" />
+        </form>
+        <p class="p_m">
+          Forgot <a href="">Username</a>/<a href="">Password</a>
+        </p>
+        <p class="p_m">Don't have an acount <a href="">Sign up</a></p>
+      </div>
+    </div>
+  </body>
+</html>

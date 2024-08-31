@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        height: 645px;
+        background-color: #1abc9c;
+      }
+      #center {
+        margin-top: 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      #login {
+        height: 600px;
+        width: 600px;
+        background-color: #fff;
+        border-radius: 5px;
+        border: 1px solid rgba(0, 0, 0, 0.4);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      #p_login {
+        font-weight: bold;
+        font-size: xx-large;
+      }
+      #input_email {
+        margin: 0px 10px 10px 10px;
+        padding: 5px;
+        width: 350px;
+        height: 40px;
+        border: 0px;
+        border-bottom: 1px solid #000;
+      }
+      #input_email:focus {
+        outline: none !important;
+        border: 0px !important;
+        border-bottom: 1px solid #1abc9c !important;
+      }
+      #input_password {
+        margin: 10px;
+        width: 350px;
+        padding: 5px;
+        width: 350px;
+        height: 40px;
+        border: 0px;
+        border-bottom: 1px solid #000;
+      }
+      #input_password:focus {
+        outline: none !important;
+        border: 0px !important;
+        border-bottom: 1px solid #1abc9c !important;
+      }
+      #show {
+        width: 370px;
+      }
+      #in_login {
+        margin-top: 40px;
+        margin-bottom: 20px;
+        width: 370px;
+        background-color: #0b847a;
+        color: #fff;
+        padding: 10px 20px 10px 20px;
+        font-size: medium;
+        border-radius: 5px;
+      }
+      a {
+        text-decoration: none;
+        color: #0b847a;
+      }
+      .p_m {
+        margin: 2px;
+      }
+      label {
+        width: 350px;
+        color: #1abc9c;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="center">
+      <div id="login">
+        <p id="p_login">Login</p>
+        <form action="">
+          <label for="email">Email</label>
+          <input
+            id="input_email"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email"
+          />
+          <label for="password">password</label>
+          <input
+            id="input_password"
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Password"
+          />
+          <input id="in_login" type="submit" value="Log in" />
+        </form>
+        <p class="p_m">Forgot <a href="">Password?</a></p>
+      </div>
+    </div>
+  </body>
+</html>
